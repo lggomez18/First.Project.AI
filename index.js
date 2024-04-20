@@ -1,5 +1,5 @@
 function showAnswer(response) {
-    console.log(response.data.answer);
+    alert(response.data.answer);
 
 }
 
