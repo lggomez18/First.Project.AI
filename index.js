@@ -3,4 +3,4 @@ let context ="Provide specific information";
 let prompt = "When was AI first created?";
 let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
-console.log(apiUrl);
+axios.get(apiUrl).then(showAnswer)
