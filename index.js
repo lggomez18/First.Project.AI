@@ -17,7 +17,7 @@ axios.get(apiUrl).then(showAnswer);
 function handleClick(){
     alert("hooray🥳");
     let heading = document.querySelector ("h1");
-    heading.style.color="green";
+    heading.classList.toggle("highlight");
 }
 
 let buttonElement = document.querySelector("#special-button");
