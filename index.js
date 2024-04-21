@@ -11,4 +11,9 @@ let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${
 console.log("processing");
 axios.get(apiUrl).then(showAnswer);
 
-let 
+function handleClick(){
+    alert("hooray🥳");
+}
+
+let buttonElement = document.querySelector("#special-button");
+buttonElement.addEventListener("click", handleClick);
