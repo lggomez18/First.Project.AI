@@ -1,5 +1,20 @@
-function showJoke(response) {  
-alert (response.data.answer);
+
+function showJoke (response){
+console.log(response.data.answer);
+
+new Typewriter("#joke", {
+  strings: response.data.answer,
+  autoStart: true,
+  cursor:"",
+  delay:15,
+});
+
+}
+
+
+
+function tellJoke(event) {  
+
 
 
 let apiKey = "290724cd93ad94b31t54c30cca2o800f";
@@ -11,9 +26,7 @@ axios.get(apiUrl).then(showJoke);
 }
 
 
-function tellJoke (event){
-  
-}
+
 
 
   let buttonElement= document.querySelector ("#jokeButton");
