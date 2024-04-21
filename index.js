@@ -9,4 +9,6 @@ let prompt = "Who was the first female to develop AI?";
 let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
 console.log("processing");
-axios.get(apiUrl).then(showAnswer)
+axios.get(apiUrl).then(showAnswer);
+
+let 
