@@ -14,7 +14,13 @@
     <style>
 
         body{
-            background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+            background: url(img/footer3.jpg);
+            background-size:cover;
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
             
@@ -27,17 +33,18 @@
   cursor: pointer;
   font-weight: bold;
   padding: 10px 15px;
+  margin: 350px auto; /* Use auto margins for horizontal centering */
   text-align: center;
   transition: 200ms;
-  /*width: 100%;*/
   box-sizing: border-box;
-  border: 0;
-  font-size: 16px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+  border: none; /* Fix: Added border none */
+  font-size: 35px;
 }
 
+
+.container{
+    text-align: center;
+}
 .button-32:not(:disabled):hover,
 .button-32:not(:disabled):focus {
   outline: 0;
@@ -59,7 +66,7 @@
 <body>
 
            <!-- HTML !-->
-           <button class="button-32" role="button">Tell me a Joke</button>
+           <button class="button-32 container" role="button">Tell me a Joke</button>
 
     <h1></h1>
     <h2></h2>
