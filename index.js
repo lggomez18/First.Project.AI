@@ -29,3 +29,6 @@ buttonElement.addEventListener("click", handleClick);
 //element.classList.remove("highlight");
 
 
+
+let challenge1Button = document.querySelector("#challenge-1");
+challenge1Button.setAttribute ("disabled","disabled");
