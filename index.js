@@ -4,8 +4,8 @@ jokeSentence.innerHTML= alert (response.data.answer);
 }
 
 let apiKey = "290724cd93ad94b31t54c30cca2o800f";
-let context ="Jokes about pets";
-let prompt = "Tell me one joke at a time about cats";
+let context ="You are a creative AI assistant that invents jokes about pets";
+let prompt = "Generate a short joke about pets";
 let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
 axios.get(apiUrl).then(showAnswer);
