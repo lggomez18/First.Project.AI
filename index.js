@@ -3,13 +3,13 @@
 
 //}
 
-let apiKey = "290724cd93ad94b31t54c30cca2o800f";
-let context ="Provide specific information, such as name, birth location and year";
-let prompt = "Who was the first female to develop AI?";
-let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+//let apiKey = "290724cd93ad94b31t54c30cca2o800f";
+//let context ="Provide specific information, such as name, birth location and year";
+//let prompt = "Who was the first female to develop AI?";
+//let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
-console.log("processing");
-axios.get(apiUrl).then(showAnswer);
+//console.log("processing");
+//axios.get(apiUrl).then(showAnswer);
 
 
 
@@ -29,10 +29,14 @@ axios.get(apiUrl).then(showAnswer);
 //element.classList.remove("highlight");
 
 
-//challenge1
-//let challenge1Button = document.querySelector("#challenge-1");
-//challenge1Button.setAttribute ("disabled","disabled");
+let challenge2Element = document.querySelector("#challenge-2");
+challenge2Element.innerHTML = "Matt Delac";
 
-//challenge2
-//let challenge2Button = document.querySelector("#challenge-2");
-//challenge2Button.style.backgroundColor="green";
+//typerwritter
+
+new Typewriter('h2', {
+  strings: 'Matt Delac',
+  autoStart: true,
+  cursor:"",
+  delay:10,
+});
