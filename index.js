@@ -24,3 +24,6 @@ let buttonElement = document.querySelector("#special-button");
 buttonElement.addEventListener("click", handleClick);
 buttonElement.style.color = "red";
 
+//setAttributes
+//element.styles.marginRight='10px';
+//element.classList.remove("highlight");
