@@ -1,18 +1,6 @@
-function showAnswer(response) {
-
-  //let buttonElement = document.querySelector("#jokeButton");
-  //buttonElement.addEventListener("click", showAnswer);
-
-  //typerwritter
-
-//new Typewriter('h2', {
-  //strings: 'Matt Delac',
-  //autoStart: true,
-  //cursor:"",
-  //delay:10,
-//});
-  
-alert (response.data.answer);
+function showAnswer(response) {  
+let jokeSentence= document.querySelector ("#jokeSetence");
+jokeSentence.innerHTML= alert (response.data.answer);
 }
 
 let apiKey = "290724cd93ad94b31t54c30cca2o800f";
@@ -25,21 +13,27 @@ axios.get(apiUrl).then(showAnswer);
 
 
 
-//function handleClick(){
+function handleClick(){
+  let jokeSentenceElement= document.querySelector ("#jokeSetence");
+  jokeSentenceElement.addEventListener("click", handleClick);
+  jokeSentenceElement.innerHTML= alert (response.data.answer);
 
-   // buttonElement.setAttribute = ("disabled", "disabled");
-    //buttonElement.style.background="green";
-
-//}
+}
 
 //let buttonElement = document.querySelector("#special-button");
 //buttonElement.addEventListener("click", handleClick);
 
-//setAttributes
-//element.styles.marginRight='10px';
-//element.classList.remove("highlight");
+//let challenge2Element = document.querySelector("#challenge-2");
+//challenge2Element.innerHTML = "Matt Delac";
 
+  //let buttonElement = document.querySelector("#jokeButton");
+  //buttonElement.addEventListener("click", showAnswer);
 
-let challenge2Element = document.querySelector("#challenge-2");
-challenge2Element.innerHTML = "Matt Delac";
+  //typerwritter
 
+//new Typewriter('h2', {
+  //strings: 'Matt Delac',
+  //autoStart: true,
+  //cursor:"",
+  //delay:10,
+//});
