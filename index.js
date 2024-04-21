@@ -1,7 +1,7 @@
-function showAnswer(response) {
-    alert(response.data.answer);
+//function showAnswer(response) {
+    //alert(response.data.answer);
 
-}
+//}
 
 let apiKey = "290724cd93ad94b31t54c30cca2o800f";
 let context ="Provide specific information, such as name, birth location and year";
@@ -14,21 +14,25 @@ axios.get(apiUrl).then(showAnswer);
 
 
 
-function handleClick(){
+//function handleClick(){
 
-    buttonElement.setAttribute = ("disabled", "disabled");
-    buttonElement.style.background="green";
+   // buttonElement.setAttribute = ("disabled", "disabled");
+    //buttonElement.style.background="green";
 
-}
+//}
 
-let buttonElement = document.querySelector("#special-button");
-buttonElement.addEventListener("click", handleClick);
+//let buttonElement = document.querySelector("#special-button");
+//buttonElement.addEventListener("click", handleClick);
 
 //setAttributes
 //element.styles.marginRight='10px';
 //element.classList.remove("highlight");
 
 
+//challenge1
+//let challenge1Button = document.querySelector("#challenge-1");
+//challenge1Button.setAttribute ("disabled","disabled");
 
-let challenge1Button = document.querySelector("#challenge-1");
-challenge1Button.setAttribute ("disabled","disabled");
+//challenge2
+//let challenge2Button = document.querySelector("#challenge-2");
+//challenge2Button.style.backgroundColor="green";
