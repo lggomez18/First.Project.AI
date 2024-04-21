@@ -15,15 +15,17 @@ axios.get(apiUrl).then(showAnswer);
 
 
 function handleClick(){
-    alert("hooray🥳");
-    let heading = document.querySelector ("h1");
-    heading.classList.toggle("highlight");
+
+    buttonElement.setAttribute = ("disabled", "disabled");
+    buttonElement.style.background="green";
+
 }
 
 let buttonElement = document.querySelector("#special-button");
 buttonElement.addEventListener("click", handleClick);
-buttonElement.style.color = "red";
 
 //setAttributes
 //element.styles.marginRight='10px';
 //element.classList.remove("highlight");
+
+
