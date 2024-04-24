@@ -19,11 +19,15 @@ header{
     margin-bottom: 30px;
 }
 
+
 form{
     padding: 30px;
+    box-shadow: 0px 20px 60px rgba(65, 50, 100,0.08);
     background-color: aliceblue;
     border-radius: 10px;
     display: flex;
+    margin-bottom: 30px;
+
 }
 
 .instructions{
@@ -36,15 +40,31 @@ form{
     color:#272044;
 }
 
-.submit-button{
+.submit-button{ 
     margin-left: 10px;
-    background:white;
-    color:#272044;
+    background: #272044;
+    color:white;
     border-radius:50px;
+    border:none;
     padding: 14px 24px;
+    width: 120px;
+    font-size: 16px;
+
 }
 
 .submit-button:hover{
-background: #272044;
-color: whitesmoke;
+    background:white;
+    color:#272044;
+}
+
+.poem{
+    font-size: 14px;
+    background-color:#fff;
+    padding: 20px;
+    line-height:24px;
+    border-left: 3px solid grey;
+    box-shadow: 0px 20px 60px rgba(65, 50, 100,0.08);
+
+
+
 }
