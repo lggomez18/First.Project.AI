@@ -1,4 +1,4 @@
-function displayPoem(response){
+function displayList(response){
 
   console.log("wheelchair accessible list generated");
 
@@ -13,7 +13,7 @@ function displayPoem(response){
 }
 
 
-function generatePoem (event){
+function generateList (event){
   event.preventDefault();
 
 
@@ -39,7 +39,7 @@ wheelchairuserElement.innerHTML = `<div class="blink">Generating a list of acces
 
 
 
-  axios.get(apiURL).then(displayPoem);
+  axios.get(apiURL).then(displayList);
   //4- display the generator poem by creating a function called 'displayPoem'.
   //5- cut & paste typewriter code inside the function displayPoem
 
@@ -47,4 +47,4 @@ wheelchairuserElement.innerHTML = `<div class="blink">Generating a list of acces
 }
 
 let wheelchairuserFormElement = document.querySelector("#wheelchairuser-generator-form");
-wheelchairuserFormElement.addEventListener ("submit", generatePoem);
+wheelchairuserFormElement.addEventListener ("submit", generateList);
