@@ -2,7 +2,7 @@ function displayPoem(response){
 
   console.log("poem generated");
 
-  new Typewriter('#poem', { 
+  new Typewriter('#wheelchairuser', { 
     //let poemElement = document.querySelector ("#poem");
     strings:response.data.answer,
     //poemElement.innerHTML = "La tombe dit...";
