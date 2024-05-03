@@ -16,20 +16,21 @@ function displayPoem(response){
 function generatePoem (event){
   event.preventDefault();
 
-  let instructionsInput= document.querySelector("#user-instructions");
+
+  let instructionsInput = document.querySelector("#user-instructions");
   //1- build the API url
   let apiKey ="290724cd93ad94b31t54c30cca2o800f";
 
   //3 Write the prompt & context
-  let context ="You are a romantic poem expert and love to write short poems.Your mission is to generate a 4 line poem in basic HTML and separate each line with a <br />. Make sure to follow user instructions.";
-  let prompt =`User instructions: Generate a French poem about ${user-instructions.value}`;
+  let context ="You are a wheelchair user person and love to explore nature in United States. Your mission is to give me a list of national parks, ordered by rating from the best to the worst, that offer accessible trails for wheelchair users in basic HTML and separate each line with a <br />. Make sure to follow user instructions. At the bottom of the list, sign with 'SheCodes AI' in bold inside a <strong> element and NOT at the beginning";
+  let prompt =`User instructions: Generate a list of national parks and their websites in United States with accessible trails for wheenchair users ${instructionsInput.value}.`;
 
   //2- make a call to the API using axios
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
   
   console.log("Generating poem");
-  console.log(`Prompt: ${prompt}`);
-  console.log(`Context: ${context}`);
+  console.log(`Prompt:${prompt}`);
+  console.log(`Context:${context}`);
 
 
 
