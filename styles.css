@@ -83,6 +83,7 @@ form{
     display: none;
 
 }
+
 .wheelchairuser strong{
     color:#38598b;
 }
@@ -91,4 +92,23 @@ footer{
     text-align: center;
     font-size:13px;
     margin-top: 30px;
+}
+
+
+
+@keyframes blink-animation {
+    to{
+        visibility: hidden;
+    }
+        
+    }
+
+    @-webkit-keyframes blink-animation{
+        to {
+            visibility: hidden;
+        }
+    }
+
+.blink {
+    animation: blink-animation 1s steps(5, start) infinite;
 }

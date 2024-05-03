@@ -29,7 +29,8 @@ function generatePoem (event){
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
   
 let wheelchairuserElement = document.querySelector ("#wheelchairuser")
-wheelchairuserElement.style.display = "block";
+wheelchairuserElement.classList.remove("hidden");
+wheelchairuserElement.innerHTML = `<div class="blink">Generating a list of accessible trails... </div>`;
 
   console.log("Generating wheelchair accessible list");
   console.log(`Prompt:${prompt}`);
