@@ -1,6 +1,6 @@
 function displayPoem(response){
 
-  console.log("poem generated");
+  console.log("wheelchair accessible list generated");
 
   new Typewriter('#wheelchairuser', { 
     //let poemElement = document.querySelector ("#poem");
@@ -28,7 +28,7 @@ function generatePoem (event){
   //2- make a call to the API using axios
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
   
-  console.log("Generating poem");
+  console.log("Generating wheelchair accessible list");
   console.log(`Prompt:${prompt}`);
   console.log(`Context:${context}`);
 
@@ -42,5 +42,5 @@ function generatePoem (event){
 
 }
 
-let poemFormElement = document.querySelector("#poem-generator-form");
+let poemFormElement = document.querySelector("#wheelchairuser-generator-form");
 poemFormElement.addEventListener ("submit", generatePoem);
