@@ -29,7 +29,7 @@ function generatePoem (event){
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
   
 let wheelchairuserElement = document.querySelector ("#wheelchairuser")
-wheelchairuserElement.display = "block";
+wheelchairuserElement.style.display = "block";
 
   console.log("Generating wheelchair accessible list");
   console.log(`Prompt:${prompt}`);
@@ -45,5 +45,5 @@ wheelchairuserElement.display = "block";
 
 }
 
-let wheelchairuserElement = document.querySelector("#wheelchairuser-generator-form");
+let wheelchairuserFormElement = document.querySelector("#wheelchairuser-generator-form");
 wheelchairuserFormElement.addEventListener ("submit", generatePoem);
